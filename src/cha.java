@@ -1,9 +1,7 @@
 public class cha {
     public static void main(String[] args) {
-
         String s = "a1b2c34c3b2cb3a1d";
         int n = s.length();
-
         for (int i = 0; i < n; i++) {
             char ch = s.charAt(i);
             if((ch>='a' && ch<='z')||(  ch>='A' && ch<='Z')){
