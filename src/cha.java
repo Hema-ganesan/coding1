@@ -13,8 +13,7 @@ public class cha {
                   }
                 if(j==i){
                     System.out.print(ch);
-                }
-            }
+                }}
             else if(ch>='0' && ch<='9'){
                 int j=0;;
                 for(j=i+1;j<n;j++) {
