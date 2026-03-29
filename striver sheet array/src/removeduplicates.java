@@ -17,6 +17,7 @@ public class removeduplicates {
                     arr[i+1] = arr[j];
                     i++;
                 }
+
         }
         for(int k=0;k<=i;k++){
             System.out.print(arr[k]+" ");

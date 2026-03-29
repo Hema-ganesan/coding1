@@ -7,7 +7,6 @@ class largest{
                 large=arr[i];
             }
         }
-
             System.out.print(large);
     }
 }
