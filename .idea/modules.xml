@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/coding.iml" filepath="$PROJECT_DIR$/coding.iml" />
       <module fileurl="file://$PROJECT_DIR$/striver sheet array/striver sheet array.iml" filepath="$PROJECT_DIR$/striver sheet array/striver sheet array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/striver sheet pattern/striver sheet pattern.iml" filepath="$PROJECT_DIR$/striver sheet pattern/striver sheet pattern.iml" />
     </modules>
   </component>
 </project>
