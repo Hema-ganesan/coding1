@@ -2,6 +2,7 @@ import java.util.*;
 public class selectionsort {
     public static void main(String[] args) {
         int arr[]={10, 3, 2, 5, 7, 49, 30};
+
 //        for(int i=0;i<arr.length;i++) {
 //            int min = arr[i];
 //            int j;
@@ -14,7 +15,7 @@ public class selectionsort {
 //            min = arr[j];
 //            arr[j] = temp;
 //        }
-        for(int i=0;i<arr.length;i++){
+        for(int i=0;i<arr.length-1;i++){
             int min=i;
             for(int j=i+1;j<arr.length;j++){
                 if(arr[j]<arr[min]){
@@ -29,4 +30,5 @@ public class selectionsort {
             System.out.print(arr[i]+" ");
         }
     }
+
 }
