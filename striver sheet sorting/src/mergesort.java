@@ -20,7 +20,6 @@ public class mergesort {
     public static int[] merge(int[] l, int[] r) {
         int b[] = new int[l.length + r.length];
         int i = 0, j = 0, k = 0;
-
         while (i < l.length && j < r.length) {
             if (l[i] <= r[j]) {
                 b[k++] = l[i++];
@@ -28,11 +27,9 @@ public class mergesort {
                 b[k++] = r[j++];
             }
         }
-
         while (i < l.length) {
             b[k++] = l[i++];
         }
-
         while (j < r.length) {
             b[k++] = r[j++];
         }
