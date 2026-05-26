@@ -63,7 +63,6 @@ public class singly {
         //LENGTH
         System.out.println("LENGTH OF THE LIST");
         System.out.println(findlength(head));
-        System.out.println();
 
         //ELEMENT EXIST OR NOT
         System.out.println("ELEMENT EXIST OR NOT");
