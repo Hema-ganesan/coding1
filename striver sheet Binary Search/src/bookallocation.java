@@ -1,6 +1,5 @@
 import java.util.Arrays;
 import java.util.Scanner;
-
 public class bookallocation {
     public static void main(String args[]){
         int a[]={10,23,32,38,21,11,49};
