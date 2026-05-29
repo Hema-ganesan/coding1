@@ -74,6 +74,11 @@ public class singly {
 
     public static void printList(ListNode head)
     {
+        if(head == null)
+        {
+            System.out.println("List is empty");
+            return;
+        }
         ListNode temp=head;
         while(temp!=null)
         {
@@ -87,6 +92,7 @@ public class singly {
     }
     public static ListNode create(int[] arr)
     {
+        if(arr.length==0){return null;}
         ListNode head=new ListNode(arr[0],null );
         ListNode temp=head;
         for(int i=1;i< arr.length;i++)
@@ -108,6 +114,9 @@ public class singly {
 
     public static ListNode insertatlast(ListNode head,int val)
     {
+        if(head==null){
+            return new ListNode(val,null);
+        }
         ListNode temp=head;
         while(temp.next!=null)
         {
@@ -145,6 +154,12 @@ public class singly {
 
     public static ListNode insertbeforeval(ListNode head,int val,int el)
     {
+        if(head==null){
+            return null;
+        }
+        if(head.val==el){
+            return new ListNode(val,head);
+        }
         ListNode temp=head;
         ListNode temp1;
         while(temp.next!=null){
@@ -163,7 +178,7 @@ public class singly {
     {
         ListNode temp=head;
         ListNode temp1;
-        while(temp.next!=null){
+        while(temp!=null){
             if(temp.val==el){
                 temp1=new ListNode(val,null);
                 temp1.next=temp.next;
@@ -184,6 +199,9 @@ public class singly {
     }
 
     private static ListNode deleteatlast(ListNode head) {
+        if(head==null || head.next==null){
+            return null;
+        }
         ListNode temp=head;
         while(temp.next.next!=null){
             temp=temp.next;
@@ -196,12 +214,15 @@ public class singly {
         if(head==null){
             return null;
         }
+        if(head==null || pos<0){
+            return head;
+        }
         int cnt=0;
         ListNode temp=head;
         if(pos==0){
             return head.next;
         }
-        while(temp.next!=null){
+        while(temp.next!=null && temp!=null){
             if(cnt==pos-1){
                 temp.next=temp.next.next;
                 break;
@@ -214,7 +235,7 @@ public class singly {
 
     public static ListNode deletebyelement(ListNode head,int el){
         ListNode temp=head;
-        if(el==head.val){
+        if(head.val==el){
             head=head.next;
         }
         if(head==null){
@@ -243,7 +264,7 @@ public class singly {
     }
 
     //ELEMENT EXIST OR NOT
-    public static Boolean elementexistornot(ListNode head,int val)
+    public static boolean elementexistornot(ListNode head,int val)
     {
         ListNode temp=head;
         while(temp!=null){
