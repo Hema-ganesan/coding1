@@ -36,10 +36,10 @@ public class doubly{
         System.out.println("INSERTING AFTER VALUE");
         printList(head);
         System.out.println();
-//        head=insertbeforevalue(head);
-//        System.out.println("INSERTING BEFORE VALUE");
-//        printList(head);
-//        System.out.println();
+        head=insertbeforevalue(head);
+        System.out.println("INSERTING BEFORE VALUE");
+        printList(head);
+        System.out.println();
 
     }
 
@@ -142,5 +142,8 @@ public class doubly{
         return head;
     }
 
+    public static Node insertbeforevalue(Node head){
+        return head;
+    }
 
 }
