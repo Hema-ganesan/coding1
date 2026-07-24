@@ -9,6 +9,5 @@ class sumofnaturalnum{
             arr[i]=i+1;
             System.out.print(arr[i]+" ");
         }
-
     }
 }
